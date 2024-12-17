@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+    forsrobin_webb:
+        build: 
+            context: ./
+        restart: always
+        image: '767398027625.dkr.ecr.eu-north-1.amazonaws.com/forsrobin-web:christ'
+        ports:
+            - '80:80'
