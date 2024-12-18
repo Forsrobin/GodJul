@@ -11,6 +11,7 @@ window.addEventListener('load', function () {
   const openButton = document.getElementById('open-curtain')
   const img1 = document.getElementById('img1')
   const img2 = document.getElementById('img2')
+  const section = document.getElementById('sectionChrist')
 
   // On click , change the animation state to animate once
   openCurtainButton.addEventListener('click', function () {
@@ -18,6 +19,8 @@ window.addEventListener('load', function () {
     img2.style.animation = 'moveCurtainRight 2s forwards'
     // Hide the open button
     openButton.style.display = 'none'
+    // Display flex on the section
+    section.style.display = 'flex'
 
     // Load the auto after the curtain is opened
     setTimeout(loadAudio, 100)
